@@ -1,4 +1,4 @@
-# Copy Access Token Extension
+# Auto Token Copier Extension
 
 ## Overview
 
