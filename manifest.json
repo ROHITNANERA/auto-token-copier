@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Copy Access Token",
+  "version": "1.0",
+  "description": "Automatically copies the access token from the API response.",
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "scripting",
+    "webRequest",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "https://your-host-name/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://your-host-name/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
